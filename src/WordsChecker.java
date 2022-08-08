@@ -1,8 +1,9 @@
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Set;
 
 public class WordsChecker {
-    HashSet<String> wordsHashSet = new HashSet<>();
+    private final Set<String> wordsHashSet = new HashSet<>();
 
     public WordsChecker(String text) {
         Collections.addAll(wordsHashSet, text.split("\\P{IsAlphabetic}+"));
